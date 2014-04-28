@@ -15,7 +15,7 @@ Easily drop schedule information on the front page and authenticate an administr
 
 * Database initialization
 
-* How to run the test suite
+* How to run the test suite - RSpec is not currently installed, Rails Test suite available
 
 * Services (job queues, cache servers, search engines, etc.)
 

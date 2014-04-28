@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="row">
+    <% @articles.each do |article| %>
+      <div class="col-md-6 col-md-offset-1">
+        <h2><%= article.title %></h2>
+        <%= simple_format(article.text) %> 
+      </div>
+    <% end %>
+  </div> 
+
+  <%= link_to 'Articles', controller: 'articles' %>
+</div>

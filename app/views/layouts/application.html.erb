@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kagyudc</title>
+  <title>KagyuDC</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,14 +9,17 @@
 <body>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-7">
-      <h1>Kagyu DC <small>A Tibetan Buddhist community in Washington, DC.</small></h1>
+  <header>
+    <div class="row">
+      <div class="col-md-1 pull-left">
+        <%= image_tag "lotus.png", :size => "75", :class => "img-responsive" %>
+      </div>
+      <div class="col-md-5">
+        <h1>Kagyu Drupgyu Chodzong</h1>
+        <p class="text-muted lead">A Tibetan Buddhist community in Washington, DC under the guidance of Lama Norlha Rinpoche</p>
+      </div>
     </div>
-    <div class="col-md-3 pull-right">
-      <%= image_tag "lotus.png", :size => "100", :class => "img-responsive" %>
-    </div>
-  </div>
+  </header>
 </div>
 <div class="container">
   <%= yield %>

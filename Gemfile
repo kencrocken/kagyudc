@@ -15,6 +15,7 @@ ruby '2.1.1'
   gem 'faker', '1.1.2'
   gem 'will_paginate', '3.0.4'
   gem 'bootstrap-will_paginate', '0.0.9'
+  gem 'tinymce-rails'
   gem "unicorn-rails"
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

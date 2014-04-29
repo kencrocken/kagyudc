@@ -1,20 +1,22 @@
 source 'https://rubygems.org'
 ruby '2.1.1'
 
-gem 'rails', '4.1.0'
-gem 'sass-rails', '~> 4.0.3'
-gem 'bootstrap-sass', '~> 3.1.1'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
+  gem 'rails', '4.1.0'
+  gem 'sass-rails', '~> 4.0.3'
+  gem 'bootstrap-sass', '~> 3.1.1'
+  gem 'uglifier', '>= 1.3.0'
+  gem 'coffee-rails', '~> 4.0.0'
+  gem 'jquery-rails'
+  gem 'turbolinks'
+  gem 'jbuilder', '~> 2.0'
 
-gem 'sprockets', '2.11.0'
-gem 'bcrypt-ruby', '3.1.2'
-gem 'faker', '1.1.2'
-gem 'will_paginate', '3.0.4'
-gem 'bootstrap-will_paginate', '0.0.9'
+  gem 'sprockets', '2.11.0'
+  gem 'bcrypt-ruby', '3.1.2'
+  gem 'faker', '1.1.2'
+  gem 'will_paginate', '3.0.4'
+  gem 'bootstrap-will_paginate', '0.0.9'
+
+  gem 'unicorn-rails'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 group :development do

@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'static_pages/about'
-
-  get 'static_pages/contact'
-
   resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -10,7 +6,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-
+  match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

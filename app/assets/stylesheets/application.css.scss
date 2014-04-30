@@ -26,6 +26,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -37,6 +38,18 @@ body {
 /* End Sticky footer styles 
 -------------------------------------------------- */
 
+/* Floating Menu styles
+-------------------------------------------------- */
+#fadeMenu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+/* End Floating Menu styles
+-------------------------------------------------- */
 h1,h2,h3,h4,h5,h6{
   font-family: 'Dosis', Helvetica, Arial, sans-serif;
 }
@@ -54,4 +67,8 @@ header {
     h1{
       padding-bottom: 5px;
     }
+}
+.navbar-text {
+  margin: 0;
+  padding: 12px 5px 0 0;
 }

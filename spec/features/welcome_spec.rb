@@ -2,8 +2,6 @@ require 'spec_helper'
 
 describe "Welcome" do
 
-  let(:base_title) { "KagyuDC" }
-
   describe "welcome page" do
 
     it "should have the content 'Kagyu Drupgyu Chodzong'" do

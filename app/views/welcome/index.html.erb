@@ -1,13 +1,10 @@
 <% provide(:title, 'Welcome') %>
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <h4><%= link_to 'Articles', controller: 'articles' %></h4>
 
+    <h4><%= link_to 'Articles', controller: 'articles' %></h4>
     <% @articles.each do |article| %>
       <h2><%= article.title %></h2>
       <%= simple_format(article.text.html_safe) %> 
-  </div>
     <% end %>
-</div> 
+
 
 

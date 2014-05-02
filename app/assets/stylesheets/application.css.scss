@@ -16,6 +16,16 @@
 @import "bootstrap";
 @import url("http://fonts.googleapis.com/css?family=Dosis|Open+Sans:400,300");
 
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -68,4 +78,40 @@ header {
     h1{
       padding-bottom: 5px;
     }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+label {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
 }

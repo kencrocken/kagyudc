@@ -1,8 +1,19 @@
 <% provide(:title, 'Welcome') %>
 
       <%= render 'welcome/featurette' %>
+  
+  <div class="med-buddha">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">A dharma center on Capital Hill. <span class="text-muted">All are welcome.</span></h2>
+        <p class="lead">We have regular meditation & chanting weekly as well as visiting teachers and scholars and an ongoing lecture series.</p>
+      </div>
+    </div>
+  </div>
+    
+
       <%= render 'welcome/practices' %>
-      
+
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <h4><%= link_to 'Articles', controller: 'articles' %></h4>

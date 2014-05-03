@@ -79,11 +79,18 @@ header {
     }
 }
 
+/* Welcome */
 .practices {
   text-align: center;
   img{
     margin: 0 auto;
   }
+}
+.med-buddha {
+  background-image: url(asset-path('med-buddha-bkgd.jpg')) no-repeat center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
 }
 
 /* Footer */

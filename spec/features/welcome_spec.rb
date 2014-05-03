@@ -20,8 +20,6 @@ describe "Welcome" do
         expect(page).to have_title(full_title('About'))
         click_link "Contact"
         expect(page).to have_title(full_title('Contact'))
-        click_link "Home"
-        expect(page).to have_title(full_title('Welcome'))
         click_link "KagyuDC"
         expect(page).to have_title(full_title('Welcome'))
     end

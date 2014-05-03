@@ -79,6 +79,14 @@ header {
       padding-bottom: 5px;
     }
 }
+
+.practices {
+  text-align: center;
+  img{
+    margin: 0 auto;
+  }
+}
+
 /* Footer */
 #footer {
   padding-top: 5px;
@@ -117,4 +125,10 @@ label {
 
 .field_with_errors {
   @extend .has-error;
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
 }

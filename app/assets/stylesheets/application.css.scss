@@ -80,17 +80,44 @@ header {
 }
 
 /* Welcome */
+.featurette {
+  ul{
+    padding-left: 33px;
+    li{
+      font-size: 18px;
+      padding: 5px 0;
+    }
+  }
+}
 .practices {
   text-align: center;
+  padding-top: 40px;
   img{
     margin: 0 auto;
   }
 }
-.med-buddha {
-  background-image: url(asset-path('med-buddha-bkgd.jpg')) no-repeat center;
+
+.background-image{
+
+  height: 500px;
+  width:100%;
+  background: asset_url('med-buddha-bkgd.jpg') no-repeat center center;
   background-size: cover;
-  height: 300px;
-  width: 100%;
+  // filter: blur(2px);
+
+  // -webkit-filter: blur(2px);
+  // -moz-filter: blur(2px);
+  // -o-filter: blur(2px);
+  // -ms-filter: blur(2px);
+  .background-overlay{
+  background: rgba(255,255,255,.7);
+  height: 100%;
+  width:100%;
+  padding: 15px;
+    h2{
+      padding-top: 100px;
+    }
+  }
 }
 
 /* Footer */
@@ -132,9 +159,28 @@ label {
 .field_with_errors {
   @extend .has-error;
 }
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
 }
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+}
+

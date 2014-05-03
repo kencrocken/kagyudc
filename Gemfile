@@ -9,7 +9,7 @@ ruby '2.1.1'
   gem 'jquery-rails'
   gem 'turbolinks'
   gem 'jbuilder', '~> 2.0'
-
+  gem "scrollreveal-rails" 
   gem 'sprockets', '2.11.0'
   gem 'bcrypt-ruby', '3.1.2'
   gem 'faker', '1.1.2'

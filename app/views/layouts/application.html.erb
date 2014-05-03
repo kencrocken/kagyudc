@@ -15,23 +15,7 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Dosis|Open+Sans' rel='stylesheet' type='text/css'>
 
-
   <%= render 'layouts/shim' %>
-
-<script type="text/javascript">
-
-$(window).scroll(function(){
- 
-  if ($(this).scrollTop() > 100) {
-    $('#fadeMenu').fadeIn();
-  }
-  else {
-    $('#fadeMenu').fadeOut();
-  }
- 
-});
-
-</script>
 
 </head>
 <body>
@@ -52,7 +36,6 @@ $(window).scroll(function(){
 </div>
 
   <%= render 'layouts/footer' %>
-
 
 </body>
 </html>

@@ -14,5 +14,15 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require tinymce
+//= require float_nav
+//= require scrollReveal
 //= require turbolinks
 //= require_tree .
+
+var config = {
+  viewportFactor: 0.33
+};
+
+$(function(){
+ window.scrollReveal = new scrollReveal( config );
+  });

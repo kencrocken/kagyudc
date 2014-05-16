@@ -5,6 +5,7 @@
       <h2>Member Profile</h2>
       <h3><%= @user.name %></h3>
       <p>Email: <%= @user.email %></p>
+      <%= link_to "Edit profile", edit_user_path(current_user) %>
     </section>
   </div>
 </div>

@@ -7,14 +7,6 @@ def full_title(page_title)
   end
 end
 
-include ApplicationHelper
-
-RSpec::Matchers.define :have_error_message do |message|
-  match do |page|
-    page.should have_selector('div.alert.alert-danger', text: 'Invalid')
-  end
-end
-
 def sign_in(user, options={})
   if options[:no_capybara]
     # Sign in when not using Capybara.

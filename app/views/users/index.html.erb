@@ -3,7 +3,13 @@
 <%= will_paginate %>
 <ul class="users">
   <% @users.each do |user| %>
-      <li><%= user.name %> Email: <%= user.email %></li>
+      <li><%= user.name %> Email: <%= user.email %>
+
+    <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to "delete", user, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+    <% end %>
   <% end %>
+  </li>
 </ul>
 <%= will_paginate %>

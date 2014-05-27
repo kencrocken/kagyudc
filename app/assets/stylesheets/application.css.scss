@@ -25,7 +25,58 @@ $grayLighter: #eee;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* Cover styles
+-------------------------------------------------- */
+body{
+  padding-top: 700px;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+  width:100%;
+  background: url('/assets/cover-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  ul {
+    padding-top: 31px;
+  }
+  .mast {
+    padding-top: 250px;
+  }
+  img {
+    margin: 0 auto;
+  }
+  .lead {
+    color: white;
+  }
+  a {
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    color: rgba(255,255,255,.4);
+  }
+  a:hover{
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+  }
+}
 
+.overlay{
+    opacity:0.8;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+/* End Cover styles
+-------------------------------------------------- */
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

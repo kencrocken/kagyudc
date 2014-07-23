@@ -1,29 +1,55 @@
 <section>
   <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <%= scroll_reveal(animation: "enter right, after .2s" ) do %>
+    <div class="row featurette">
+      <div class ="col-md-8">
         <h2 class="featurette-heading">A dharma center on Capital Hill. 
                   <span class="text-muted">All are welcome.</span></h2>
         <p class="lead">We have regular meditation & chanting weekly as well as visiting 
                         teachers and scholars and an ongoing lecture series.</p>
-        <ul class="list-unstyled">
-          <li><%= link_to "Our Teachers", about_path(anchor: "teachers") %></li>
-          <li><%= link_to "Weekly Practice Schedule", root_path(anchor: "practice") %></li>
-          <li><%= link_to "Intro to Meditation and Tibetan Buddhism", root_path(anchor: "practice") %></li>
-          <li><%= link_to "Learn about the Dharma Center", about_path(anchor: "center") %>
-          <li><%= link_to "Kagyu Lineage", about_path(anchor: "lineage") %></li>
+        <ul class="list-inline">
+          <li><%= link_to 'Come Vist', about_path %></li>
+          <li><%= link_to 'Email Us', about_path %></li>
+          <li><%= link_to 'Practice Schedule', about_path %></li>
+          <li><%= link_to 'Intro to Tibetan Buddhism', about_path %></li>
         </ul>
-        <p class="lead">We welcome anyone who is interested in study and practise of meditation
-                        and Tibetan Buddhism.</p>
-      <% end %>
+      </div>
+      <div class="col-md-3">
+        <%= image_tag "shrine.jpg", :size => "300x300", :class => "featurette-image img-responsive img-circle"  %>
+      </div>
     </div>
-    <div class="col-md-5">
-      <%= image_tag "rinpoche-lamarod.jpg", :size => "500", :class => "featurette-image img-responsive"  %>
-    </div>
-  </div>
+    <div class="row featurette">
+      <h1 class = "text-center">Our Teachers</h1>
+      <div class="col-md-3">
+        <%= image_tag "rinpoche-lamarod.jpg", :size => "300", :class => "featurette-image img-responsive img-circle"  %>
+      </div>
+      <div class = "col-md-8">
+        <h2 class="featurette-heading">Ven. Lama Norlha Rinpoche</h2>
+        <p>Lama Norlha Rinpoche, an accomplished meditation and retreat master, is the abbot of Kagyu Thubten Chöling Monastery and director of Kyabje Dorje Chang Kalu Rinpoche’s Dharma centers in the eastern United States. <%= link_to "Read more", about_path(anchor: "rinpoche") %></p>
+        <div class = "row">
+          <div class = "col-sm-12">
+            <h3>Visiting Teachers</h3>
+          </div>
+        </div>
 
+        <div class = "row">
+          <div class = "col-xs-2">
+            <%= image_tag "http://www.fillmurray.com/75/75", 
+                :class => "featurette-image img-responsive img-circle"  %>
+                <p class = "text-muted small">Lama Murray</p>
+          </div>
+          <div class = "col-xs-2">
+            <%= image_tag "http://www.stevensegallery.com/75/75", 
+                :class => "featurette-image img-responsive img-circle"  %>
+                <p class = "text-muted small">Lama Segal</p>
+          </div>
+          <div class = "col-xs-2">      
+            <%= image_tag "http://www.placecage.com/c/75/75", 
+                :class => "featurette-image img-responsive img-circle"  %>
+                <p class = "text-muted small">Lama Cage</p>
+          </div>
+        </div>
+      </div>
+    </div>
   <hr class="featurette-divider">
 </section>
 

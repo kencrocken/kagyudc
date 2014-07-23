@@ -14,8 +14,9 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to 'About', about_path %></li>
-              <li><%= link_to 'Contact', contact_path %></li>
+
+                <%= render 'layouts/nav_items' %>
+
 
               <% if signed_in? %>
 
@@ -44,8 +45,13 @@
     </div>
 <div class="container"> 
   <header class="text-center">
-    <%= image_tag "lotus.png", :size => "75", :class => "img-responsive" %>
-    <h1>Kagyu Drupgyu Chodzong</h1>
-    <p class="text-muted lead">A Tibetan Buddhist community in Washington, DC under the guidance of Lama Norlha Rinpoche</p>
+
+        <%= image_tag "lotus.png", :size => "75", :class => "img-responsive" %>
+        <h1>Kagyu Drupgyu Chodzong</h1>
+        <p class="lead">A Tibetan Buddhist community in Washington, DC under the guidance of Lama Norlha Rinpoche</p>
+        <ul class="list-inline">
+
+          <%= render 'layouts/nav_items' %>
+        </ul>
   </header>
 </div>

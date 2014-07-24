@@ -4,27 +4,50 @@
       <div class ="col-md-8">
         <h2 class="featurette-heading">A dharma center on Capital Hill. 
                   <span class="text-muted">All are welcome.</span></h2>
-        <p class="lead">We have regular meditation & chanting weekly as well as visiting 
-                        teachers and scholars and an ongoing lecture series.</p>
-        <ul class="list-inline">
-          <li><%= link_to 'Come Vist', about_path %></li>
-          <li><%= link_to 'Email Us', about_path %></li>
-          <li><%= link_to 'Practice Schedule', about_path %></li>
-          <li><%= link_to 'Intro to Tibetan Buddhism', about_path %></li>
-        </ul>
+        <p class="lead">Regular meditation and sadhana practice as well as a monthly Introduction to Tibetan Buddhism on the first Thursday. <%= link_to 'Learn More &raquo;'.html_safe, about_path %></p>
+
+        <div class="row">
+        <div class="col-xs-4">
+          <h4>Sunday</h4>
+          <h5>Medicine Buddha and Amitabha</h5>
+
+          <%= image_tag "med_buddha.png", :size => "75", :class => "img-circle"  %>
+
+          <p class = "small">10 am til 1 pm at the dharma center</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-xs-4">
+          <h4>Thursday</h4>
+          <h5>Chenrezig</h5>    
+
+          <%= image_tag "mani.png", :size => "75" %>
+
+
+          <p class = "small">7 pm till 8 pm at the dharma center</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-xs-4">
+          <h4>Saturday</h4>  
+          <h5>Morning Mindfulness</h5>
+                 
+          <%= image_tag "meditation.png", :size => "75" %>
+
+          <p class = "small">10 am till 1 pm at the Capital Hill Church</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
       </div>
       <div class="col-md-3">
         <%= image_tag "shrine.jpg", :size => "300x300", :class => "featurette-image img-responsive img-circle"  %>
       </div>
     </div>
     <div class="row featurette">
-      <h1 class = "text-center">Our Teachers</h1>
+              <h2 class = "text-center">Teachers</h2>
       <div class="col-md-3">
+
         <%= image_tag "rinpoche-lamarod.jpg", :size => "300", :class => "featurette-image img-responsive img-circle"  %>
       </div>
       <div class = "col-md-8">
         <h2 class="featurette-heading">Ven. Lama Norlha Rinpoche</h2>
-        <p>Lama Norlha Rinpoche, an accomplished meditation and retreat master, is the abbot of Kagyu Thubten Chöling Monastery and director of Kyabje Dorje Chang Kalu Rinpoche’s Dharma centers in the eastern United States. <%= link_to "Read more", about_path(anchor: "rinpoche") %></p>
+        <p>Lama Norlha Rinpoche, an accomplished meditation and retreat master, is the abbot of Kagyu Thubten Chöling Monastery and director of Kyabje Dorje Chang Kalu Rinpoche’s Dharma centers in the eastern United States. <%= link_to 'Read more &raquo;'.html_safe, about_path(anchor: "rinpoche") %></p>
         <div class = "row">
           <div class = "col-sm-12">
             <h3>Visiting Teachers</h3>

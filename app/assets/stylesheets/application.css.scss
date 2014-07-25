@@ -61,7 +61,7 @@ body {
 /* End Floating Menu styles
 -------------------------------------------------- */
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -80,7 +80,9 @@ header {
 }
 
 /* Welcome */
-
+.lead {
+  font-weight: 300;
+}
 .featurette {
   ul{
     padding-left: 33px;
@@ -94,34 +96,9 @@ header {
   }
 }
 
-.practices {
-  text-align: center;
-  padding-top: 40px;
-  img{
+.dharmacenter {
+  img { 
     margin: 0 auto;
-  }
-}
-
-.background-image{
-
-  height: 500px;
-  width:100%;
-  background: asset_url('med-buddha-bkgd.jpg') no-repeat center center;
-  background-size: cover;
-  // filter: blur(2px);
-
-  // -webkit-filter: blur(2px);
-  // -moz-filter: blur(2px);
-  // -o-filter: blur(2px);
-  // -ms-filter: blur(2px);
-  .background-overlay{
-  background: rgba(255,255,255,.7);
-  height: 100%;
-  width:100%;
-  padding: 15px;
-    h2{
-      padding-top: 100px;
-    }
   }
 }
 

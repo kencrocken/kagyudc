@@ -31,6 +31,7 @@ $grayLighter: #eee;
 html {
   position: relative;
   min-height: 100%;
+  min-width: 100%;
 }
 body {
   /* Margin bottom by footer height */
@@ -42,7 +43,7 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: auto;
   background-color: #f5f5f5;
 }
 /* End Sticky footer styles 
@@ -62,10 +63,12 @@ body {
 -------------------------------------------------- */
 h1,h2,h3,h4,h5,h6{
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 
@@ -91,17 +94,44 @@ header {
       padding: 5px 5px;
     }
   }
-  img{
-    margin:0 auto;
-  }
+}
+
+.media-body{
+  padding-left: 10px;
 }
 
 .dharmacenter {
-  img { 
+  position: relative;
+  color: white;
+  padding-top: 5%;
+  margin-bottom: 25px;
+  height: 300px;
+}
+/* Dharmacenter Background */
+.dharmacenter-bkgd{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  min-width: 100%;
+  background: image-url('center.jpg') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+.dharmacenter-overlay{
+  background: rgba(0,0,0,.5);
+  height: 100%;
+  width:100%;
+
+}
+.practice{
+    img {
     margin: 0 auto;
   }
 }
-
+.teacher {
+  margin-top: 10px;
+}
 /* Footer */
 #footer {
   padding-top: 5px;

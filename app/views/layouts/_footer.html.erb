@@ -1,9 +1,14 @@
 <div id="footer">
-  <div class="container">
     <nav class="pull-right">
       <ul class="list-inline">
         <li><%= link_to "Home", root_path %></li>
       </ul>
     </nav>
-  </div>
+    <address>
+      <p>For more information:</p> 
+      <p>Email: <%= mail_to 'kagyudc@gmail.com' %></p>
+      <p>Telephone: <%= phone_number_link("(202) 546-0226") %></p>
+      1519 D St., SE <br />
+      Washington, DC 20003
+    </address>
 </div>

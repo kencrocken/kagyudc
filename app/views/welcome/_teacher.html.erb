@@ -1,0 +1,39 @@
+<section class = "container teacher">
+
+    <div class="row featurette">
+             <!--  <h2 class = "text-center">Teachers</h2> -->
+      <div class="col-md-3">
+
+        <%= image_tag "rinpoche-lamarod.jpg", :size => "300", :class => "featurette-image img-responsive img-circle"  %>
+      </div>
+      <div class = "col-md-8">
+        <h2 class="featurette-heading text-muted">Ven. Lama Norlha Rinpoche</h2>
+        <p class = "lead">Lama Norlha Rinpoche, an accomplished meditation and retreat master, is the abbot of Kagyu Thubten Chöling Monastery and director of Kyabje Dorje Chang Kalu Rinpoche’s Dharma centers in the eastern United States. <%= link_to 'Read more &raquo;'.html_safe, about_path(anchor: "rinpoche") %></p>
+        <div class = "row">
+          <div class = "col-sm-12">
+            <h3 class="text-muted">Visiting Teachers</h3>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class = "col-xs-2">
+            <%= image_tag "http://www.fillmurray.com/75/75", 
+                :class => "featurette-image img-responsive img-circle"  %>
+                <p class = "text-muted small">Lama Murray</p>
+          </div>
+          <div class = "col-xs-2">
+            <%= image_tag "http://www.stevensegallery.com/75/75", 
+                :class => "featurette-image img-responsive img-circle"  %>
+                <p class = "text-muted small">Lama Segal</p>
+          </div>
+          <div class = "col-xs-2">      
+            <%= image_tag "http://www.placecage.com/c/75/75", 
+                :class => "featurette-image img-responsive img-circle"  %>
+                <p class = "text-muted small">Lama Cage</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <hr class="featurette-divider">
+</section>
+

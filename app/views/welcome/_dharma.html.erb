@@ -1,41 +1,32 @@
-<section>
-  <div class="row featurette dharmacenter">
-    <div class = "col-md-3">
-    <figure>
-      <%= image_tag "center.jpg", :size => "300x300", :class => "featurette-image img-responsive img-circle"  %>
-    </figure>
+<section class = "practice">
+<div class = "container">
+  <h2 class="text-center text-muted">Our Practices</h2>
+  <div class="row practices">
+    <div class = "col-md-8 col-md-offset-2">
+      <div class="col-xs-4">
+        <h4 class="text-center">Sunday</h4>
+        <%= image_tag "med_buddha.png", :size => "150", :class => "featurette-image img-responsive img-circle"  %>
+
+        <p class = "small text-center">Medicine Buddha and Amitabha</p>
+        <p class = "small text-center">From 10 til 1 pm at the Dharma Center</p>
+      </div><!-- /.col-xs-4 -->
+      <div class="col-xs-4">
+        <h4 class="text-center">Thursday</h4>
+
+        <%= image_tag "mani.png", :size => "150", :class => "featurette-image img-responsive img-circle"  %>
+
+        <p class = "small text-center">Chenrezig</p>
+        <p class = "small text-center">From 7 til 8:30pm at the Dharma Center</p>
+      </div><!-- /.col-xs-4 -->
+      <div class="col-xs-4">
+        <h4 class="text-center">Saturday</h4>  
+               
+        <%= image_tag "meditation.png", :size => "150", :class => "featurette-image img-responsive" %>
+
+        <p class = "small text-center">Morning Mindfulness</p>
+        <p class = "small text-center">From 10 til Noon at the Capitol Hill Presbyterian Church</p>
+      </div><!-- /.col-xs-4 -->
     </div>
-    <div class = "col-md-8">
-      <h2 class="featurette-heading">A dharma center on Capital Hill. 
-                                    <span class="text-muted">All are welcome.</span></h2>
-      <p class="lead">A short walk from the Potomac Ave. Metro, we hold regular meditation and sadhana practice as well as a monthly Introduction to Tibetan Buddhism on the first Thursday. Visitors are encouraged and instructions are always provided.  <%= link_to 'Learn More &raquo;'.html_safe, about_path %></p>
-      <div class="row practices">
-        <h2 class="text-muted">Our Practice</h2>
-        <div class="media">
-          <%= link_to (image_tag "med_buddha.png", :size => "150", :class => "img-responsive img-circle pull-left"), about_path %>
-          <div class="media-body">
-            <h3 class="media-heading">Sunday</h3>
-            <h4>Medicine Buddha and Amitabha</h4>
-          </div>
-        </div>
-        <div class="media">
-          <%= link_to (image_tag "mani.png", :size => "150", :class => "img-responsive pull-left"), about_path %>
-          <div class="media-body">
-            <h3 class="media-heading">Thursday</h3>
-            <h4>Chenrezig</h4>
-          </div>
-        </div>
-        <div class="media">
-          <%= link_to (image_tag "meditation.png", :size => "150", :class => "img-responsive pull-left"), about_path %>
-          <div class="media-body">
-            <h3 class="media-heading">Saturday</h3>
-            <h4>Morning Mindfulness</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </div><!-- /.row -->
+</div>
 </section>
-
-
-

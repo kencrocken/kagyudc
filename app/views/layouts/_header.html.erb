@@ -46,13 +46,14 @@
     </div>
 <div class="container"> 
   <header class="text-center">
-
-        <%= image_tag "lotus.png", :size => "75", :class => "img-responsive" %>
-        <h1><%= link_to 'Kagyu Drupgyu Chodzong', root_path %></h1>
-        <p class="lead">A Tibetan Buddhist community in Washington, DC under the guidance of Lama Norlha Rinpoche</p>
-        <ul class="list-inline">
+<h1><%= link_to 'Kagyu Drupgyu Chodzong', root_path, class: "pull-left" %></h1>
+        <ul class="list-inline pull-right">
 
           <%= render 'layouts/nav_items' %>
-        </ul>
+        </ul>        
+        <%= image_tag "lotus.png", :size => "75", :class => "img-responsive" %>
+        
+        <p class="lead">A Tibetan Buddhist community in Washington, DC under the guidance of Lama Norlha Rinpoche</p>
+
   </header>
 </div>
